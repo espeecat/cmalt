@@ -1,15 +1,19 @@
-export default function Home() {
+import { Card, Flex, Heading } from '@radix-ui/themes'
+import PageFrame from "@/components/PageFrame";
+
+export default async function Home() {
+
   return (
-      <div
-          className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-        <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-          <h1>CMALT</h1>
+      <PageFrame>
+        <Flex direction="column" gap="8">
+          <Flex justify="between">
+            <Heading>CMALT</Heading>
+          </Flex>
 
-        </main>
-        <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
+          <p>CMALT portfolio</p>
 
 
-        </footer>
-      </div>
-  );
+        </Flex>
+      </PageFrame>
+  )
 }

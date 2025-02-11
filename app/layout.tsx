@@ -9,8 +9,8 @@ import 'tailwindcss/tailwind.css'
 const inter = Inter({subsets: ['latin']})
 
 export const metadata: Metadata = {
-  title: 'Exams Management',
-  description: 'Exams management'
+  title: 'CMALT Portfolio',
+  description: 'CMALT Portfolio',
 }
 
 export default function RootLayout({

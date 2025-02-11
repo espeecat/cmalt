@@ -1,4 +1,4 @@
-import { Card, Flex, Heading } from '@radix-ui/themes'
+import {  Flex, Heading } from '@radix-ui/themes'
 import PageFrame from "@/components/PageFrame";
 
 export default async function Home() {

@@ -73,6 +73,18 @@ export default function ContactPage() {
                 </div>
               </CardContent>
             </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle>Huxley Building</CardTitle>
+                <CardContent className="space-y-4">
+                  <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.775012916761!2d-0.1815856233804082!3d51.498996071811376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876055c7df7c537%3A0x2541470e75df5fe0!2sHuxley%20Building!5e0!3m2!1sen!2suk!4v1741124910800!5m2!1sen!2suk"
+                      width="400" height="300"   loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"></iframe>
+                </CardContent>
+              </CardHeader>
+            </Card>
           </div>
         </div>
       </div>

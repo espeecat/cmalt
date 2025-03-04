@@ -9,8 +9,7 @@ export function ProfileHeader() {
       <div className="flex flex-col gap-8 md:flex-row">
         <div className="flex flex-col items-center gap-4 md:items-start">
           <Avatar className="h-32 w-32">
-            <AvatarImage src="/placeholder.svg?height=128&width=128" alt="Profile"/>
-            <AvatarFallback>CN</AvatarFallback>
+            <AvatarImage src="/jason-small.jpg" alt="Jason Bailey Profile"/>
           </Avatar>
           <div className="flex flex-col items-center gap-2 md:items-start">
             <h1 className="text-3xl font-bold">Dr Jason Bailey</h1>

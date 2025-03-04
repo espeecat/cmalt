@@ -6,9 +6,9 @@ import { ThemeProvider } from "@/components/theme-provider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "CMALT Portfolio",
-  description: "A professional portfolio showcasing CMALT competencies",
-    generator: 'v0.dev'
+  title: "Jason Bailey - CMALT Portfolio",
+  description: "Jason Bailey's CMALT Portfolio",
+    generator: 'nextjs'
 }
 
 export default function RootLayout({

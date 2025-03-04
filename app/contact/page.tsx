@@ -2,7 +2,7 @@ import {Button} from "@/components/ui/button"
 import {Card, CardContent, CardDescription, CardHeader, CardTitle} from "@/components/ui/card"
 import {Input} from "@/components/ui/input"
 import {Textarea} from "@/components/ui/textarea"
-import {ArrowLeft, Mail, MapPin, Phone} from "lucide-react"
+import {ArrowLeft, Mail, MapPin, Phone, ExternalLink} from "lucide-react"
 import Link from "next/link"
 
 export default function ContactPage() {
@@ -15,7 +15,7 @@ export default function ContactPage() {
               <span className="sr-only">Back to home</span>
             </Link>
           </Button>
-          <h1 className="text-3xl font-bold">Contact Me</h1>
+          <h1 className="text-3xl font-bold">Contact Jason</h1>
         </div>
 
         <div className="grid gap-8 md:grid-cols-2">
@@ -25,28 +25,29 @@ export default function ContactPage() {
             <Card>
               <CardHeader>
                 <CardTitle>Contact Information</CardTitle>
-                <CardDescription>Feel free to reach out through any of these channels.</CardDescription>
+                <CardDescription>Please do feel free to contact me</CardDescription>
               </CardHeader>
+
               <CardContent className="space-y-4">
                 <div className="flex items-start gap-4">
                   <Mail className="h-5 w-5 mt-0.5 text-primary"/>
                   <div>
                     <h3 className="font-medium">Email</h3>
-                    <p className="text-sm text-muted-foreground">jason.bailey@imperial.ac.uk</p>
+                    <p className="text-sm text-muted-foreground"><Link href={"mailto:jason.bailey@imperial.ac.uk"}>jason.bailey@imperial.ac.uk</Link></p>
                   </div>
                 </div>
-                {/*<div className="flex items-start gap-4">*/}
-                {/*  <Phone className="h-5 w-5 mt-0.5 text-primary" />*/}
-                {/*  <div>*/}
-                {/*    <h3 className="font-medium">Phone</h3>*/}
-                {/*    <p className="text-sm text-muted-foreground">+1 (555) 123-4567</p>*/}
-                {/*  </div>*/}
-                {/*</div>*/}
+                <div className="flex items-start gap-4">
+                  <ExternalLink className="h-5 w-5 mt-0.5 text-primary"/>
+                  <div>
+                    <h3 className="font-medium">Linkedin</h3>
+                    <p className="text-sm text-muted-foreground"><Link href={"https://www.linkedin.com/in/jasebailey/"}>https://www.linkedin.com/in/jasebailey</Link></p>
+                  </div>
+                </div>
                 <div className="flex items-start gap-4">
                   <MapPin className="h-5 w-5 mt-0.5 text-primary"/>
                   <div>
                     <h3 className="font-medium">Location</h3>
-                    <p className="text-sm text-muted-foreground">Department of Computing
+                    <p className="text-sm text-muted-foreground">Department of Computing,
                       Imperial College London,
                       Huxley Building,
                       South Kensington Campus,

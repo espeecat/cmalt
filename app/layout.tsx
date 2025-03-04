@@ -1,28 +1,32 @@
-import {Theme} from '@radix-ui/themes'
-import '@radix-ui/themes/styles.css'
-import classNames from 'classnames'
-import type {Metadata} from 'next'
-import {Inter} from 'next/font/google'
-import React from 'react'
-import 'tailwindcss/tailwind.css'
+import type React from "react"
+import "@/app/globals.css"
+import { Inter } from "next/font/google"
+import { ThemeProvider } from "@/components/theme-provider"
 
-const inter = Inter({subsets: ['latin']})
+const inter = Inter({ subsets: ["latin"] })
 
-export const metadata: Metadata = {
-  title: 'CMALT Portfolio',
-  description: 'CMALT Portfolio',
+export const metadata = {
+  title: "CMALT Portfolio",
+  description: "A professional portfolio showcasing CMALT competencies",
+    generator: 'v0.dev'
 }
 
 export default function RootLayout({
-                                     children
-                                   }: Readonly<{
+  children,
+}: {
   children: React.ReactNode
-}>) {
+}) {
   return (
-      <html lang="en">
-      <body className={classNames(inter.className, 'p-6')}>
-      <Theme>{children}</Theme>
+    <html lang="en" suppressHydrationWarning>
+      <body className={inter.className}>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+          {children}
+        </ThemeProvider>
       </body>
-      </html>
+    </html>
   )
 }
+
+
+
+import './globals.css'

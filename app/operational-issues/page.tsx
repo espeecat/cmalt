@@ -29,14 +29,7 @@ export default function OperationalIssuesPage() {
               </TabsList>
               <TabsContent value="overview" className="p-4 border rounded-md mt-2">
                 <h2 className="text-xl font-semibold mb-4">Understanding Operational Issues</h2>
-                <p>
-                  You should show how you have used or supported others to use technology appropriately, given the
-                  constraints and benefits it provides within your context. You should consider how you compared and
-                  contrasted the constraints and benefits of diﬀerent technologies to meet the specific needs of users
-                  (students or staﬀ).
 
-
-                </p>
 
                 <p className="mb-4">
                   This section demonstrates my understanding of the constraints and benefits of different technologies
@@ -181,7 +174,7 @@ export default function OperationalIssuesPage() {
           </div>
         </div>
 
-        <h2 className="text-3xl font-bold">1b use of edtech/programming</h2>
+        <h2 className="text-3xl font-bold">1b</h2>
         <div className="grid gap-8 md:grid-cols-3">
           <div className="md:col-span-2">
             <Tabs defaultValue="overview">

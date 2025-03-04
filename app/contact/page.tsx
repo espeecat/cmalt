@@ -47,9 +47,9 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-medium">Location</h3>
                     <p className="text-sm text-muted-foreground">Department of Computing
-                      Imperial College London
-                      Huxley Building
-                      South Kensington Campus
+                      Imperial College London,
+                      Huxley Building,
+                      South Kensington Campus,
                       London, SW7 2AZ
                     </p>
                   </div>

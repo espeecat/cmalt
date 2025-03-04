@@ -30,6 +30,9 @@ export function ProfileHeader() {
               My CMALT portfolio demonstrates my commitment to best
               practices in learning technology and continuous professional development.
             </p>
+            <p className="text-muted-foreground mb-4">
+              NB This is WIP
+            </p>
             <div className="flex flex-wrap gap-2">
               <Button variant="outline" size="sm" className="gap-2">
                 <Download className="h-4 w-4"/>

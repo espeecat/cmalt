@@ -174,7 +174,7 @@ export default function OperationalIssuesPage() {
           </div>
         </div>
 
-        <h2 className="text-3xl font-bold">1b</h2>
+        <h2 className="text-2xl font-bold">1b - Technical knowledge and ability in the use of Learning Technology</h2>
         <div className="grid gap-8 md:grid-cols-3">
           <div className="md:col-span-2">
             <Tabs defaultValue="overview">
@@ -186,20 +186,16 @@ export default function OperationalIssuesPage() {
               <TabsContent value="overview" className="p-4 border rounded-md mt-2">
                 <h2 className="text-xl font-semibold mb-4">Understanding Operational Issues</h2>
                 <p className="mb-4">
-                  This section demonstrates my understanding of the constraints and benefits of different technologies
-                  in
-                  my professional context. It covers:
-                </p>
-                <ul className="list-disc pl-6 space-y-2 mb-4">
-                  <li>Technical knowledge and ability in the use of learning technology</li>
-                  <li>Supporting the deployment of learning technologies</li>
-                  <li>Technical knowledge and ability in the development/implementation of learning technologies</li>
-                  <li>Managing the deployment of learning technologies</li>
-                </ul>
-                <p>
-                  Through the evidence and reflection provided, I demonstrate how I select and use appropriate
-                  technologies for specific contexts and purposes, showing awareness of the benefits and limitations of
-                  different technologies.
+                  In this section, I describe use of GitHub, Python and Flask to support MSc
+                  students for an MSc module. The module was developed to support MSc conversion students in Software
+                  Systems engineering.
+
+                  Module 70085 covers common software engineering topics for developing web applications with Python,
+                  Azure, Docker, Github, Databases and more.
+
+                  A co-authored paper on the subject of this module was presented
+
+
                 </p>
               </TabsContent>
               <TabsContent value="evidence" className="space-y-4 p-4 border rounded-md mt-2">
@@ -207,63 +203,32 @@ export default function OperationalIssuesPage() {
                   <h2 className="text-xl font-semibold">Evidence</h2>
                   <Card>
                     <CardHeader className="pb-2">
-                      <CardTitle className="text-lg">LMS Implementation Project</CardTitle>
-                      <CardDescription>Technical documentation and project plan</CardDescription>
+                      <CardTitle className="text-lg">Conference paper</CardTitle>
+                      <CardDescription>Co-authored conference papwer</CardDescription>
                     </CardHeader>
                     <CardContent>
                       <p className="text-sm text-muted-foreground mb-4">
-                        Documentation of the implementation of a new Learning Management System, including technical
-                        requirements, deployment strategy, and user training materials.
+                        A conference paper describing the development and implementation of the MSc module was presented
+                        at the <Link href="https://epc.ac.uk/event/uk-and-ireland-engineering-education-research-network-annual-symposium-2" >EERN conference in July 2025</Link>.
                       </p>
                       <div className="flex gap-2">
-                        <Button variant="outline" size="sm" className="gap-2">
-                          <FileText className="h-4 w-4"/>
-                          View Document
-                        </Button>
+                        <Link href="https://edtech.pages.doc.ic.ac.uk/preprints/eern-lean-learning-for-se-25.pdf">
+
+                          <Button><FileText className="h-4 w-4"/>View EERN paper</Button>
+                        </Link>
                       </div>
                     </CardContent>
                   </Card>
 
-                  <Card>
-                    <CardHeader className="pb-2">
-                      <CardTitle className="text-lg">Technology Evaluation Report</CardTitle>
-                      <CardDescription>Comparative analysis of learning technologies</CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="text-sm text-muted-foreground mb-4">
-                        A detailed report comparing different learning technologies, evaluating their benefits,
-                        limitations, and suitability for specific educational contexts.
-                      </p>
-                      <div className="flex gap-2">
-                        <Button variant="outline" size="sm" className="gap-2">
-                          <FileText className="h-4 w-4"/>
-                          View Report
-                        </Button>
-                      </div>
-                    </CardContent>
-                  </Card>
+
                 </div>
               </TabsContent>
               <TabsContent value="reflection" className="p-4 border rounded-md mt-2">
                 <h2 className="text-xl font-semibold mb-4">Reflection</h2>
-                <p className="mb-4">
-                  My approach to operational issues in learning technology has evolved significantly over my career.
-                  I've
-                  learned that successful technology implementation requires not just technical knowledge, but also a
-                  deep
-                  understanding of the educational context and user needs.
-                </p>
-                <p className="mb-4">
-                  One of the key challenges I've faced is balancing innovation with reliability. While new technologies
-                  offer exciting possibilities, they must be thoroughly tested and supported to ensure they enhance
-                  rather
-                  than hinder the learning experience.
-                </p>
+
+
                 <p>
-                  Moving forward, I aim to continue developing my technical skills while also focusing on how technology
-                  can be used to address specific pedagogical challenges. I believe that the most effective learning
-                  technology professionals are those who can bridge the gap between technical possibilities and
-                  educational needs.
+                  Reflection on 1b...
                 </p>
               </TabsContent>
             </Tabs>
@@ -328,7 +293,7 @@ export default function OperationalIssuesPage() {
           </div>
         </div>
 
-        <h2 className="text-3xl font-bold">1c -suport</h2>
+        <h2 className="text-1xl font-bold">1c -Supporting the deployment of learning technologies</h2>
         <div className="grid gap-8 md:grid-cols-3">
           <div className="md:col-span-2">
             <Tabs defaultValue="overview">
@@ -338,23 +303,12 @@ export default function OperationalIssuesPage() {
                 <TabsTrigger value="reflection">Reflection</TabsTrigger>
               </TabsList>
               <TabsContent value="overview" className="p-4 border rounded-md mt-2">
-                <h2 className="text-xl font-semibold mb-4">Understanding Operational Issues</h2>
+
                 <p className="mb-4">
-                  This section demonstrates my understanding of the constraints and benefits of different technologies
-                  in
-                  my professional context. It covers:
+                  In this section I describe a training session for managing grades in Blackboard VLE
                 </p>
-                <ul className="list-disc pl-6 space-y-2 mb-4">
-                  <li>Technical knowledge and ability in the use of learning technology</li>
-                  <li>Supporting the deployment of learning technologies</li>
-                  <li>Technical knowledge and ability in the development/implementation of learning technologies</li>
-                  <li>Managing the deployment of learning technologies</li>
-                </ul>
-                <p>
-                  Through the evidence and reflection provided, I demonstrate how I select and use appropriate
-                  technologies for specific contexts and purposes, showing awareness of the benefits and limitations of
-                  different technologies.
-                </p>
+
+
               </TabsContent>
               <TabsContent value="evidence" className="space-y-4 p-4 border rounded-md mt-2">
                 <div className="space-y-4">
@@ -362,40 +316,19 @@ export default function OperationalIssuesPage() {
                   <Card>
                     <CardHeader className="pb-2">
                       <CardTitle className="text-lg">LMS Implementation Project</CardTitle>
-                      <CardDescription>Technical documentation and project plan</CardDescription>
+                      <CardDescription>Training document for managing grades in Blackboard</CardDescription>
                     </CardHeader>
                     <CardContent>
                       <p className="text-sm text-muted-foreground mb-4">
-                        Documentation of the implementation of a new Learning Management System, including technical
-                        requirements, deployment strategy, and user training materials.
+                        grades doc
                       </p>
                       <div className="flex gap-2">
-                        <Button variant="outline" size="sm" className="gap-2">
-                          <FileText className="h-4 w-4"/>
-                          View Document
-                        </Button>
+
                       </div>
                     </CardContent>
                   </Card>
 
-                  <Card>
-                    <CardHeader className="pb-2">
-                      <CardTitle className="text-lg">Technology Evaluation Report</CardTitle>
-                      <CardDescription>Comparative analysis of learning technologies</CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="text-sm text-muted-foreground mb-4">
-                        A detailed report comparing different learning technologies, evaluating their benefits,
-                        limitations, and suitability for specific educational contexts.
-                      </p>
-                      <div className="flex gap-2">
-                        <Button variant="outline" size="sm" className="gap-2">
-                          <FileText className="h-4 w-4"/>
-                          View Report
-                        </Button>
-                      </div>
-                    </CardContent>
-                  </Card>
+
                 </div>
               </TabsContent>
               <TabsContent value="reflection" className="p-4 border rounded-md mt-2">

@@ -183,22 +183,69 @@ export default function OperationalIssuesPage() {
               </TabsList>
               <TabsContent value="overview" className="p-4 border rounded-md mt-2">
                 <h2 className="text-xl font-semibold mb-4">Understanding Operational Issues</h2>
+
+
                 <p className="mb-4">
-                  In this section, I describe use of GitHub, Python and Flask to support MSc
-                  students for an MSc module. The module was developed to support MSc conversion students in Software
-                  Systems engineering.
+                  My technical work spans several interconnected systems, and I will describe the most educationally
+                  significant of them here. The first is the Answerbook platform, which I manage for the delivery of
+                  digital examinations. Each year, Answerbook supports more than 500 students sitting assessments across
+                  30 or more modules. My responsibilities encompass reliability, security, and scalability: I must
+                  ensure that the platform does not fail during a live examination, that student work cannot be accessed
+                  or tampered with by unauthorised parties, and that the system can handle simultaneous peak load from
+                  hundreds of concurrent users. This has required me to develop robust deployment pipelines — I use
+                  GitLab CI/CD throughout my work — and to establish clear incident response procedures in collaboration
+                  with the Exams Team, CSG IT, and invigilators.
+                </p>
+                <p className="mb-4">
 
-                  Module 70085 covers common software engineering topics for developing web applications with Python,
-                  Azure, Docker, Github, Databases and more.
 
-                  A co-authored paper on the subject of this module was presented
+                  The second system is ImPaaS, a bespoke Platform as a Service that I have extended beyond the
+                  Department of Computing to support other faculties. Bioengineering has now used ImPaaS for two years
+                  to host more than 30 group projects involving teams of four students. Extending a platform to new
+                  departments requires careful attention to infrastructure provisioning, access control, and user
+                  support — none of which can be assumed to transfer automatically from one institutional context to
+                  another. The experience also required me to work diplomatically across departmental boundaries,
+                  building trust with colleagues who had no prior relationship with our team or our systems.
+                </p>
+                <p className="mb-4">
 
+
+                  A third area is the Teaching database, which I maintain as the departmental system of record for
+                  student enrolment, progression, and assessment. The integrity of this database has direct consequences
+                  for students' academic records, which means that technical decisions about schema design, data
+                  validation, and backup procedures carry genuine ethical weight.
 
                 </p>
+                <p className="mb-4">
+
+                  I actively maintain expertise in AI and large language models as they apply to EdTech, and I am
+                  supervising a final-year undergraduate project that analyses data from the Lambda Feedback automated
+                  feedback platform to explore whether student interaction patterns can predict academic performance.
+
+                </p>
+
               </TabsContent>
               <TabsContent value="evidence" className="space-y-4 p-4 border rounded-md mt-2">
                 <div className="space-y-4">
                   <h2 className="text-xl font-semibold">Evidence</h2>
+
+                  <p className="mb-4">
+
+
+                    - GitLab repository and CI/CD pipeline configuration for Answerbook and ImPaaS
+                    - System architecture documentation or diagrams for Answerbook, ImPaaS, and the Teaching database
+                    - Published conference paper: "Creating a Student-Friendly PaaS Platform: Experiences with Tsuru in
+                    Software Engineering Education" (FSE '25, June 2025, DOI: 10.1145/3696630.3727239)
+                    - Evidence of ImPaaS deployment in Bioengineering (e.g., email correspondence, project logs, or a
+                    statement from a Bioengineering colleague)
+                    - [PLACEHOLDER: Any incident reports or post-mortem documentation from Answerbook exam delivery
+                    would serve as powerful evidence of systematic risk management]
+                    - [PLACEHOLDER: Student or staff feedback on ImPaaS usability, particularly from Bioengineering,
+                    would strengthen the reflection on cross-disciplinary deployment]
+
+
+                  </p>
+
                   <Card>
                     <CardHeader className="pb-2">
                       <CardTitle className="text-lg">Conference paper</CardTitle>
@@ -226,9 +273,38 @@ export default function OperationalIssuesPage() {
               <TabsContent value="reflection" className="p-4 border rounded-md mt-2">
                 <h2 className="text-xl font-semibold mb-4">Reflection</h2>
 
+                <p className="mb-4">
 
-                <p>
-                  Reflection on 1b...
+
+                  Managing Answerbook has taught me more about risk than almost anything else in my career. An
+                  examination is, in some respects, the highest-stakes educational moment a student experiences, and the
+                  consequences of a platform failure are severe: students lose work, trust in the system collapses, and
+                  the academic integrity of the assessment may be called into question. This responsibility has made me
+                  a more careful and systematic developer. I now think about failure modes before I think about
+                  features, and I have a much stronger appreciation for the value of automated testing, monitoring, and
+                  documented rollback procedures.
+
+                </p>
+                <p className="mb-4">
+
+
+                  The expansion of ImPaaS to Bioengineering surfaced a tension I had not fully anticipated: the
+                  assumptions embedded in a system designed by and for computing students do not always translate to
+                  students in other disciplines. What is intuitive to a third-year computing undergraduate may be
+                  bewildering to a bioengineering student encountering containerised deployment for the first time. This
+                  taught me to approach technical design with greater humility — the system exists to serve the learner,
+                  not to showcase what is technically elegant. It also led directly to one of my 2025 conference papers,
+                  which reflects on the pedagogical and practical dimensions of this experience.
+
+                </p>
+                <p className="mb-4">
+
+                  I am aware that my AI expertise is an area of genuine strategic importance but also of significant
+                  risk. I champion the use of LLMs as educational tools while remaining alert to issues of academic
+                  integrity, over-reliance, and the potential for these systems to produce confident misinformation. I
+                  try to model critical engagement with AI for the students I work with rather than uncritical
+                  enthusiasm.
+
                 </p>
               </TabsContent>
             </Tabs>

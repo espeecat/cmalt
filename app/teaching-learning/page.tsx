@@ -1,168 +1,171 @@
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { ArrowLeft, FileText, LinkIcon, Upload } from "lucide-react"
+import {Button} from "@/components/ui/button"
+import {Card, CardContent, CardDescription, CardHeader, CardTitle} from "@/components/ui/card"
+import {Tabs, TabsContent, TabsList, TabsTrigger} from "@/components/ui/tabs"
+import {ArrowLeft, FileText, LinkIcon, Upload} from "lucide-react"
 import Link from "next/link"
 
 export default function TeachingLearningPage() {
   return (
-    <div className="container py-10">
-      <div className="flex items-center gap-2 mb-8">
-        <Button variant="ghost" size="icon" asChild>
-          <Link href="/">
-            <ArrowLeft className="h-4 w-4" />
-            <span className="sr-only">Back to home</span>
-          </Link>
-        </Button>
-        <h1 className="text-3xl font-bold">Teaching, Learning & Assessment</h1>
-      </div>
-
-      <div className="grid gap-8 md:grid-cols-3">
-        <div className="md:col-span-2">
-          <Tabs defaultValue="overview">
-            <TabsList className="grid w-full grid-cols-3">
-              <TabsTrigger value="overview">Overview</TabsTrigger>
-              <TabsTrigger value="evidence">Evidence</TabsTrigger>
-              <TabsTrigger value="reflection">Reflection</TabsTrigger>
-            </TabsList>
-            <TabsContent value="overview" className="p-4 border rounded-md mt-2">
-              <h2 className="text-xl font-semibold mb-4">Teaching, Learning & Assessment</h2>
-              <p className="mb-4">
-                This section demonstrates my understanding and engagement with teaching, learning, and assessment
-                processes. It covers:
-              </p>
-              <ul className="list-disc pl-6 space-y-2 mb-4">
-                <li>An understanding of teaching, learning and/or assessment processes</li>
-                <li>An understanding of your target learners</li>
-                <li>The ability to design and support effective learning activities</li>
-                <li>The ability to evaluate the effectiveness of learning activities</li>
-              </ul>
-              <p>
-                Through the evidence and reflection provided, I demonstrate how I use technology to enhance teaching,
-                learning, and assessment, showing awareness of different pedagogical approaches and how technology can
-                support them.
-              </p>
-            </TabsContent>
-            <TabsContent value="evidence" className="space-y-4 p-4 border rounded-md mt-2">
-              <div className="space-y-4">
-                <h2 className="text-xl font-semibold">Evidence</h2>
-                <Card>
-                  <CardHeader className="pb-2">
-                    <CardTitle className="text-lg">Blended Learning Course Design</CardTitle>
-                    <CardDescription>Course materials and student feedback</CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-sm text-muted-foreground mb-4">
-                      Documentation of a blended learning course I designed, including learning objectives, activities,
-                      assessment strategies, and student feedback data.
-                    </p>
-                    <div className="flex gap-2">
-                      <Button variant="outline" size="sm" className="gap-2">
-                        <FileText className="h-4 w-4" />
-                        View Course Design
-                      </Button>
-                    </div>
-                  </CardContent>
-                </Card>
-
-                <Card>
-                  <CardHeader className="pb-2">
-                    <CardTitle className="text-lg">Assessment Innovation Project</CardTitle>
-                    <CardDescription>Implementation of technology-enhanced assessment</CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-sm text-muted-foreground mb-4">
-                      A case study of how I implemented innovative assessment methods using technology, including the
-                      rationale, implementation process, and evaluation of effectiveness.
-                    </p>
-                    <div className="flex gap-2">
-                      <Button variant="outline" size="sm" className="gap-2">
-                        <FileText className="h-4 w-4" />
-                        View Case Study
-                      </Button>
-                    </div>
-                  </CardContent>
-                </Card>
-              </div>
-            </TabsContent>
-            <TabsContent value="reflection" className="p-4 border rounded-md mt-2">
-              <h2 className="text-xl font-semibold mb-4">Reflection</h2>
-              <p className="mb-4">
-                My approach to teaching, learning, and assessment has been shaped by both theoretical knowledge and
-                practical experience. I believe that technology should serve pedagogical goals, not the other way
-                around.
-              </p>
-              <p className="mb-4">
-                One of the most significant insights I've gained is the importance of aligning technology use with
-                specific learning objectives. Technology can enhance learning when it addresses specific pedagogical
-                challenges or opportunities, but it can be a distraction when implemented without clear purpose.
-              </p>
-              <p>
-                Moving forward, I aim to continue exploring how emerging technologies can support diverse learning needs
-                and preferences. I'm particularly interested in how adaptive learning technologies can provide more
-                personalized learning experiences while maintaining the social aspects of education.
-              </p>
-            </TabsContent>
-          </Tabs>
+      <div className="container py-10">
+        <div className="flex items-center gap-2 mb-8">
+          <Button variant="ghost" size="icon" asChild>
+            <Link href="/">
+              <ArrowLeft className="h-4 w-4"/>
+              <span className="sr-only">Back to home</span>
+            </Link>
+          </Button>
+          <h1 className="text-3xl font-bold">Teaching, Learning & Assessment</h1>
         </div>
 
-        <div className="space-y-6">
-          <Card>
-            <CardHeader>
-              <CardTitle>Resources</CardTitle>
-              <CardDescription>Supporting materials and links</CardDescription>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              <div className="flex items-start gap-2">
-                <LinkIcon className="h-5 w-5 mt-0.5 text-muted-foreground" />
-                <div>
-                  <h3 className="font-medium">Pedagogical Frameworks</h3>
-                  <p className="text-sm text-muted-foreground">Key frameworks informing my practice</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-2">
-                <Upload className="h-5 w-5 mt-0.5 text-muted-foreground" />
-                <div>
-                  <h3 className="font-medium">Student Feedback Analysis</h3>
-                  <p className="text-sm text-muted-foreground">Data on learning effectiveness</p>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
+        <div className="grid gap-8 md:grid-cols-3">
+          <div className="md:col-span-2">
+            <Tabs defaultValue="overview">
+              <TabsList className="grid w-full grid-cols-3">
+                <TabsTrigger value="overview">Overview</TabsTrigger>
+                <TabsTrigger value="evidence">Evidence</TabsTrigger>
+                <TabsTrigger value="reflection">Reflection</TabsTrigger>
+              </TabsList>
+              <TabsContent value="overview" className="p-4 border rounded-md mt-2">
+                <h2 className="text-xl font-semibold mb-4">Teaching, Learning & Assessment</h2>
+                <p className="mb-4">
+                  My engagement with teaching, learning, and assessment processes spans both direct teaching activity
+                  and the design of systems that mediate those processes for others. On the direct teaching side, I
+                  design and deliver lectures to MSc students on web design and database systems/SQL as part of the
+                  Software Systems Engineering (SSE) module. I write coursework specifications, mark submissions, and
+                  attend and support weekly SSE laboratory sessions. I also respond to student questions through the
+                  EdStem platform, which allows students to post queries and receive answers from staff or peers in a
+                  threaded, searchable format.
+                </p>
+                <p className="mb-4">
+                  In the Designing for Real People (DRP) module, I act as mentor to approximately ten student groups per
+                  year — roughly forty students in total. In this role I support teams as they work through a
+                  human-centred design process, marking milestone submissions along the way and assessing final
+                  presentations. This module requires students to engage with real stakeholders and to iterate on their
+                  designs in response to genuine user feedback, which means my mentoring involves helping students
+                  navigate ambiguity and failure as well as technical complexity.
+                </p>
+                <p className="mb-4">
+                  I have supervised eight final-year undergraduate projects and two MSc individual projects, and I have
+                  served as second marker on more than ten further projects. My current supervisory portfolio includes a
+                  project using Lambda Feedback data to explore predictive models of student performance, and a project
+                  developing a student wellbeing data capture tool — both of which sit at the boundary between software
+                  engineering and learning analytics, and both of which I bring substantive prior expertise to.
+                </p>
+                <p className="mb-4">
+                  I hold a City and Guilds Teaching and Further Education qualification, which provided me with a formal
+                  grounding in curriculum design, assessment theory, and inclusive teaching practice.
+                </p>
 
-          <Card>
-            <CardHeader>
-              <CardTitle>Core Competencies</CardTitle>
-              <CardDescription>Key skills demonstrated in this area</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <ul className="space-y-2">
-                <li className="flex items-center gap-2">
-                  <div className="h-2 w-2 rounded-full bg-primary" />
-                  <span>Learning design</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <div className="h-2 w-2 rounded-full bg-primary" />
-                  <span>Assessment strategy</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <div className="h-2 w-2 rounded-full bg-primary" />
-                  <span>Learner engagement</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <div className="h-2 w-2 rounded-full bg-primary" />
-                  <span>Educational evaluation</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <div className="h-2 w-2 rounded-full bg-primary" />
-                  <span>Pedagogical innovation</span>
-                </li>
-              </ul>
-            </CardContent>
-          </Card>
+              </TabsContent>
+              <TabsContent value="evidence" className="space-y-4 p-4 border rounded-md mt-2">
+                <div className="space-y-4">
+                  <h2 className="text-xl font-semibold">Evidence</h2>
+                  <p className="mb-4">
+                    - SSE module lecture slides and coursework specifications
+                    - Marking rubrics and sample marked work (appropriately anonymised)
+                    - EdStem activity records or screenshots showing engagement with student questions
+                    - DRP module mentoring records and assessment documentation
+                    - Project supervision agreements and project reports (appropriately anonymised)
+                    - MSc thesis: "Modelling Student Performance From Virtual Learning Environment And Demographic Data"
+                    (University of Brighton, 2017)
+                    - City and Guilds Teaching and Further Education qualification certificate
+                    - [PLACEHOLDER: Student feedback from SSE or DRP modules — even anonymised module evaluation
+                    summaries — would provide strong evidence that teaching is effective and reflective]
+                    - [PLACEHOLDER: Specific examples of how coursework specifications have been revised in response to
+                    assessment outcomes would demonstrate the reflective loop described above]
+                  </p>
+                </div>
+              </TabsContent>
+              <TabsContent value="reflection" className="p-4 border rounded-md mt-2">
+                <h2 className="text-xl font-semibold mb-4">Reflection</h2>
+                <p className="mb-4">
+                  My teaching qualification gave me a framework, but it is the accumulated experience of working with
+                  students — particularly in the laboratory and mentoring settings — that has genuinely shaped my
+                  understanding of how learning happens. In the SSE labs, I observe students encountering confusion in
+                  real time. I have noticed that the moments of productive struggle — when a student is stuck but not
+                  overwhelmed — are often the most important for learning, and that my instinct as a developer to
+                  resolve problems efficiently can actually be counterproductive in a teaching context. I have had to
+                  learn to ask diagnostic questions rather than give answers, and to trust that the discomfort of
+                  not-yet-knowing is a feature rather than a bug.
+
+                </p>
+                <p className="mb-4">
+                  My MSc thesis on modelling student performance from VLE data gave me an analytical lens through which
+                  to interrogate engagement patterns I observe in systems like Scientia. I can see, for example, when
+                  students are accessing materials late or not at all, and I am now supervising a project that extends
+                  this kind of analysis to Lambda Feedback data. This makes me aware of both the potential and the
+                  danger of learning analytics: the potential is the ability to identify struggling students early; the
+                  danger is the risk of reducing complex human experiences to a set of metrics and acting on them in
+                  ways that feel invasive or reductive to students.
+                </p>
+                <p className="mb-4">
+                  The coursework specifications I write for SSE have also required me to think carefully about
+                  assessment design. I try to design tasks that assess genuine competence rather than surface
+                  performance — tasks where a student cannot pass simply by memorising patterns without understanding
+                  them. This is harder to achieve than it sounds, and I continue to refine my approach each year in
+                  response to what the marking process reveals about where students are and are not understanding.
+                </p>
+              </TabsContent>
+            </Tabs>
+          </div>
+
+          <div className="space-y-6">
+            <Card>
+              <CardHeader>
+                <CardTitle>Resources</CardTitle>
+                <CardDescription>Supporting materials and links</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="flex items-start gap-2">
+                  <LinkIcon className="h-5 w-5 mt-0.5 text-muted-foreground"/>
+                  <div>
+                    <h3 className="font-medium">Pedagogical Frameworks</h3>
+                    <p className="text-sm text-muted-foreground">Key frameworks informing my practice</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-2">
+                  <Upload className="h-5 w-5 mt-0.5 text-muted-foreground"/>
+                  <div>
+                    <h3 className="font-medium">Student Feedback Analysis</h3>
+                    <p className="text-sm text-muted-foreground">Data on learning effectiveness</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle>Core Competencies</CardTitle>
+                <CardDescription>Key skills demonstrated in this area</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2">
+                  <li className="flex items-center gap-2">
+                    <div className="h-2 w-2 rounded-full bg-primary"/>
+                    <span>Learning design</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <div className="h-2 w-2 rounded-full bg-primary"/>
+                    <span>Assessment strategy</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <div className="h-2 w-2 rounded-full bg-primary"/>
+                    <span>Learner engagement</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <div className="h-2 w-2 rounded-full bg-primary"/>
+                    <span>Educational evaluation</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <div className="h-2 w-2 rounded-full bg-primary"/>
+                    <span>Pedagogical innovation</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </div>
-    </div>
   )
 }
 

@@ -167,7 +167,7 @@ export default function TeachingLearningPage() {
           </div>
         </div>
 
-        <h2 className="text-2xl font-bold mt-10">1b - [PLACEHOLDER: Section title]</h2>
+        <h2 className="text-2xl font-bold mt-10">2b: Understanding of Target Learners</h2>
         <div className="grid gap-8 md:grid-cols-3">
           <div className="md:col-span-2">
             <Tabs defaultValue="overview">
@@ -178,22 +178,90 @@ export default function TeachingLearningPage() {
               </TabsList>
               <TabsContent value="overview" className="p-4 border rounded-md mt-2">
                 <h2 className="text-xl font-semibold mb-4">Description</h2>
+
                 <p className="mb-4">
-                  [PLACEHOLDER: Overview content for this section.]
+                  My learners are diverse in ways that matter pedagogically. In the SSE module, I teach postgraduate
+                  students who are primarily computing specialists, but who come from a wide range of national and
+                  cultural backgrounds and who have varying levels of prior experience with web development and
+                  databases. In the DRP module, the students I mentor are typically undergraduates in their second or
+                  third year, working in interdisciplinary teams that may include students from computing, design, and
+                  other backgrounds. As a personal tutor to more than fifteen undergraduates and five MSc students over
+                  the past three years, I have direct and sustained knowledge of the pressures — academic, financial,
+                  and personal — that students navigate during their studies.
+                </p>
+                <p className="mb-4">
+
+
+                  The systems I build also reflect an understanding of learner diversity. The student wellbeing tool I
+                  am co-developing within Scientia is explicitly designed as an early warning system — a mechanism for
+                  identifying students who may be at risk before they reach a crisis point. Designing this system has
+                  required me to think carefully about the student perspective: what information they are willing to
+                  share, under what conditions, and with whom. It has also required engagement with the literature on
+                  student mental health and the evidence base for early intervention approaches.
+                </p>
+                <p className="mb-4">
+                  Through my UROP mentoring and StudentShapers involvement, I have worked with high-achieving students
+                  who are motivated to contribute to the improvement of their own learning environment. These students
+                  have a different relationship to the institution and to learning technology — they are simultaneously
+                  users, critics, and collaborators — and engaging with them productively requires a different posture
+                  than conventional teaching.
+                </p>
+                <p className="mb-4">
+
+                  The Lambda Feedback collaboration with Peter Johnson in Mechanical Engineering has exposed me to
+                  learners in STEM disciplines outside computing — students grappling with advanced mathematics — and
+                  has sharpened my understanding of how automated feedback can support or frustrate learning depending
+                  on how it is designed. Feedback that is merely correct is not always useful; feedback that explains
+                  why an answer is wrong and how to think about it differently is substantially more powerful.
                 </p>
               </TabsContent>
               <TabsContent value="evidence" className="space-y-4 p-4 border rounded-md mt-2">
                 <div className="space-y-4">
                   <h2 className="text-xl font-semibold">Evidence</h2>
+
                   <p className="mb-4">
-                    [PLACEHOLDER: Evidence for this section.]
+                    - Personal tutoring records and any relevant pastoral support documentation (appropriately
+                    anonymised)
+                    - Documentation of the student wellbeing tool project, including any user research or student
+                    consultation records
+                    - Evidence of UROP mentoring and StudentShapers engagement
+                    - Lambda Feedback project documentation or correspondence with Peter Johnson's team
+                    - [PLACEHOLDER: A reflection note or case study drawn from a specific personal tutoring encounter
+                    (fully anonymised) would be a compelling piece of evidence here]
+                    - [PLACEHOLDER: Any data on student satisfaction or engagement from SSE or DRP modules would
+                    substantiate claims about learner understanding]
                   </p>
                 </div>
               </TabsContent>
               <TabsContent value="reflection" className="p-4 border rounded-md mt-2">
                 <h2 className="text-xl font-semibold mb-4">Reflection</h2>
+
                 <p className="mb-4">
-                  [PLACEHOLDER: Reflection for this section.]
+                  Personal tutoring has been the most important source of my understanding of learners as whole people.
+                  In a personal tutorial, I am not the expert demonstrating knowledge; I am a relatively safe adult in
+                  the institution who a student can speak to about the things that are getting in the way of their
+                  learning. I have supported students through mental health crises, bereavement, financial difficulty,
+                  and the specific disorientation that international students can experience when moving to a new
+                  country to study at one of the world's most pressurised universities. These conversations have not
+                  always led to clear outcomes, but they have made me a much more empathetic and attentive teacher and
+                  system designer.
+                </p>
+                <p className="mb-4">
+                  I am increasingly convinced that the diversity of my student population is one of the most important
+                  design constraints for any system I build. A system that works well for a confident, English-speaking
+                  student who has grown up with technology may not work at all for a student who is navigating a new
+                  academic culture, communicating in their second or third language, and managing significant family
+                  pressure. When I design interfaces, I now ask explicitly: who might find this confusing, and what can
+                  I do to make it clearer?
+                </p>
+                <p className="mb-4">
+
+
+                  I have also become more critical of the assumptions embedded in learning analytics approaches,
+                  including my own MSc thesis. Demographic data can be used to identify students who may need support,
+                  but it can also encode and perpetuate structural inequalities if it is not handled carefully. I try to
+                  design systems that surface needs without labelling students, and I am aware that this is an ongoing
+                  ethical challenge rather than a problem to be solved once.
                 </p>
               </TabsContent>
             </Tabs>

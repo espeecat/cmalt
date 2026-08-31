@@ -208,8 +208,46 @@ export default function WiderContextPage() {
               </TabsList>
               <TabsContent value="overview" className="p-4 border rounded-md mt-2">
                 <h2 className="text-xl font-semibold mb-4">Description</h2>
+
+                <h3 className="text-xl font-semibold mb-4">Institutional Policy</h3>
+
                 <p className="mb-4">
-                  [PLACEHOLDER: Overview content for this section.]
+
+                  My work is shaped by several layers of institutional policy. At the College level, Imperial's
+                  education strategy — which emphasises research-led education, internationalisation, and the
+                  development of students as future professionals — informs the kinds of systems I build and the
+                  features I prioritise. The College's approach to digital assessment, which has moved strongly in the
+                  direction of digital-first exam delivery following the pandemic, is what gives the Answerbook platform
+                  its current strategic importance. I have engaged with these College-level policy directions both
+                  through my participation in the VLE and peer assessment tool selection processes and through my
+                  membership of departmental education committees and working groups.
+                </p>
+                <p className="mb-4">
+                  At the departmental level, the Department of Computing's commitment to an open-source ethos and to
+                  building and owning its own educational infrastructure is a policy context that I both operate within
+                  and actively champion. I champion open-source principles in my own work — using GitLab for version
+                  control and CI/CD, building on open-source frameworks where possible, and publishing research about
+                  our tools and approaches in open access venues.
+                </p>
+                <h3 className="text-xl font-semibold mb-4">National Policy</h3>
+
+                <p className="mb-4">
+                  At the national level, I am aware of the Office for Students' Quality Standards, which set
+                  expectations around the quality of the student academic experience and outcomes, and which
+                  increasingly reference the quality of digital and blended learning environments. I am also engaged
+                  with the broader national conversation about the role of artificial intelligence in higher
+                  education,
+                  including the emerging guidance from sector bodies such as Jisc and the Quality Assurance Agency
+                  (QAA)
+                  on AI in assessment and learning.
+                </p>
+                <p className="mb-4">
+                  My attendance at ITiCSE 2025 (the ACM conference on innovation and technology in computer science
+                  education), supported by Teaching Fellow and Learning Technologist Development Fund (TFDF) funding,
+                  and my regular participation in the CERC bi-weekly workshops at King's College London, keep me
+                  engaged
+                  with both the research base and the policy conversations that are shaping the field nationally and
+                  internationally.
                 </p>
               </TabsContent>
               <TabsContent value="evidence" className="space-y-4 p-4 border rounded-md mt-2">

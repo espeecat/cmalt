@@ -380,8 +380,49 @@ export default function OperationalIssuesPage() {
               </TabsList>
               <TabsContent value="overview" className="p-4 border rounded-md mt-2">
 
+
                 <p className="mb-4">
-                  In this section I describe a training session for managing grades in Blackboard VLE
+
+
+                  Supporting deployment is not simply a matter of switching a system on. My experience with both
+                  Answerbook and Scientia has shown me that successful deployment requires coordinating people,
+                  processes, and technical infrastructure simultaneously — and that the human coordination is often
+                  harder than the technical work.
+
+                </p>
+                <p className="mb-4">
+
+
+                  For digital exam delivery, I work with a multi-stakeholder group that includes the Exams Team, CSG IT,
+                  academic staff setting the papers, and invigilators on the day. Each group has different technical
+                  literacy, different concerns, and different points of contact with the system. My role involves
+                  ensuring that all of these groups are adequately prepared: that invigilators know what to do if a
+                  student's session drops, that the Exams Team understands how results are exported and stored, and that
+                  academic staff can upload and preview their question papers without requiring developer-level access.
+                  I have developed documentation, run briefing sessions, and acted as point-of-contact during live
+                  examinations.
+
+                </p>
+                <p className="mb-4">
+
+
+                  I also support the deployment of learning technologies through my involvement in the StudentShapers
+                  programme, which is a co-creation framework that enables students to contribute to the development of
+                  institutional systems and practices. I have worked with StudentShapers partners, including on the
+                  co-development of a student wellbeing data capture tool within Scientia — a project that has required
+                  me to navigate the specific challenges of involving students as genuine collaborators rather than
+                  merely as end-users.
+
+                </p>
+                <p className="mb-4">
+
+                  During the COVID-19 pandemic, when I was at the University of Brighton, I designed and implemented a
+                  programme that enabled remote teaching delivery at speed. I worked with Architecture staff
+                  specifically to develop approaches for live hand-sketching demonstrations via Microsoft Teams — a use
+                  case that required creative technical problem-solving because standard video conferencing was not
+                  well-suited to the fine motor detail of architectural drawing.
+
+
                 </p>
 
 
@@ -389,44 +430,79 @@ export default function OperationalIssuesPage() {
               <TabsContent value="evidence" className="space-y-4 p-4 border rounded-md mt-2">
                 <div className="space-y-4">
                   <h2 className="text-xl font-semibold">Evidence</h2>
-                  <Card>
-                    <CardHeader className="pb-2">
-                      <CardTitle className="text-lg">LMS Implementation Project</CardTitle>
-                      <CardDescription>Training document for managing grades in Blackboard</CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="text-sm text-muted-foreground mb-4">
-                        grades doc
-                      </p>
-                      <div className="flex gap-2">
+                  {/*<Card>*/}
+                  {/*  <CardHeader className="pb-2">*/}
+                  {/*    <CardTitle className="text-lg">LMS Implementation Project</CardTitle>*/}
+                  {/*    <CardDescription>Training document for managing grades in Blackboard</CardDescription>*/}
+                  {/*  </CardHeader>*/}
+                  {/*  <CardContent>*/}
+                  {/*    <p className="text-sm text-muted-foreground mb-4">*/}
+                  {/*      grades doc*/}
+                  {/*    </p>*/}
+                  {/*    <div className="flex gap-2">*/}
 
-                      </div>
-                    </CardContent>
-                  </Card>
+                  {/*    </div>*/}
+                  {/*  </CardContent>*/}
+                  {/*</Card>*/}
+
+
+                  <p className="mb-4">
+
+
+                    - Documentation, guides, or briefing materials produced for Answerbook exam delivery
+                    - Email correspondence or project records relating to COVID-era remote teaching deployment at
+                    University of Brighton
+                    - StudentShapers project records, including any student co-creation agreements or project
+                    documentation
+                    - Documentation or correspondence relating to the student wellbeing tool development within Scientia
+                    - [PLACEHOLDER: A brief statement from a colleague in Architecture at Brighton, or from the Exams
+                    Team at Imperial, attesting to the support provided would be particularly strong evidence here]
+                    - [PLACEHOLDER: If any formal evaluation was conducted of the remote teaching programme at Brighton,
+                    this would be highly relevant]
+
+                  </p>
 
 
                 </div>
               </TabsContent>
               <TabsContent value="reflection" className="p-4 border rounded-md mt-2">
                 <h2 className="text-xl font-semibold mb-4">Reflection</h2>
+
                 <p className="mb-4">
-                  My approach to operational issues in learning technology has evolved significantly over my career.
-                  I've
-                  learned that successful technology implementation requires not just technical knowledge, but also a
-                  deep
-                  understanding of the educational context and user needs.
+
+
+                  The COVID period was the most intense deployment challenge I have encountered. The pressure to deliver
+                  at speed made it impossible to follow normal change management processes, and I learned — sometimes
+                  the hard way — which corners could safely be cut and which could not. What stayed with me was the
+                  importance of understanding what colleagues were trying to achieve pedagogically before jumping to a
+                  technical solution. The Architecture staff were not asking for a video conferencing tool; they were
+                  asking for a way to preserve the intimacy and legibility of a hand-drawn sketch that students had
+                  traditionally gathered around a table to observe. Understanding that distinction made it possible to
+                  design something that actually worked for them.
+
                 </p>
                 <p className="mb-4">
-                  One of the key challenges I've faced is balancing innovation with reliability. While new technologies
-                  offer exciting possibilities, they must be thoroughly tested and supported to ensure they enhance
-                  rather
-                  than hinder the learning experience.
+
+
+                  The StudentShapers collaboration has been equally instructive, though in a different register.
+                  Involving students in the development of a wellbeing tool is ethically complex — the data being
+                  captured relates to mental health and personal circumstances — and it has required me to think
+                  carefully about the boundaries of student co-creation, the governance structures that should surround
+                  such projects, and what it means to treat a student both as a collaborator and as a potential
+                  beneficiary of the system being built. I have found this tension productive rather than paralyzing,
+                  but it has made me more cautious and more rigorous about ethical review processes.
+
+
                 </p>
-                <p>
-                  Moving forward, I aim to continue developing my technical skills while also focusing on how technology
-                  can be used to address specific pedagogical challenges. I believe that the most effective learning
-                  technology professionals are those who can bridge the gap between technical possibilities and
-                  educational needs.
+                <p className="mb-4">
+
+
+                  I have also come to appreciate that effective deployment support requires ongoing attention, not just
+                  a launch moment. Systems need champions — people who understand them well enough to resolve queries
+                  quickly and who are invested in their success. I have tried to play that role for the systems I
+                  manage, but I recognise that this creates a single point of failure, and I am increasingly aware of
+                  the need to build more resilient support structures around the tools I develop.
+
                 </p>
               </TabsContent>
             </Tabs>

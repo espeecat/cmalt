@@ -17,6 +17,7 @@ export default function TeachingLearningPage() {
           <h1 className="text-3xl font-bold">Teaching, Learning & Assessment</h1>
         </div>
 
+        <h2 className="text-3xl font-bold">2a</h2>
         <div className="grid gap-8 md:grid-cols-3">
           <div className="md:col-span-2">
             <Tabs defaultValue="overview">
@@ -104,6 +105,95 @@ export default function TeachingLearningPage() {
                   performance — tasks where a student cannot pass simply by memorising patterns without understanding
                   them. This is harder to achieve than it sounds, and I continue to refine my approach each year in
                   response to what the marking process reveals about where students are and are not understanding.
+                </p>
+              </TabsContent>
+            </Tabs>
+          </div>
+
+          <div className="space-y-6">
+            <Card>
+              <CardHeader>
+                <CardTitle>Resources</CardTitle>
+                <CardDescription>Supporting materials and links</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="flex items-start gap-2">
+                  <LinkIcon className="h-5 w-5 mt-0.5 text-muted-foreground"/>
+                  <div>
+                    <h3 className="font-medium">Pedagogical Frameworks</h3>
+                    <p className="text-sm text-muted-foreground">Key frameworks informing my practice</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-2">
+                  <Upload className="h-5 w-5 mt-0.5 text-muted-foreground"/>
+                  <div>
+                    <h3 className="font-medium">Student Feedback Analysis</h3>
+                    <p className="text-sm text-muted-foreground">Data on learning effectiveness</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle>Core Competencies</CardTitle>
+                <CardDescription>Key skills demonstrated in this area</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2">
+                  <li className="flex items-center gap-2">
+                    <div className="h-2 w-2 rounded-full bg-primary"/>
+                    <span>Learning design</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <div className="h-2 w-2 rounded-full bg-primary"/>
+                    <span>Assessment strategy</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <div className="h-2 w-2 rounded-full bg-primary"/>
+                    <span>Learner engagement</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <div className="h-2 w-2 rounded-full bg-primary"/>
+                    <span>Educational evaluation</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <div className="h-2 w-2 rounded-full bg-primary"/>
+                    <span>Pedagogical innovation</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+
+        <h2 className="text-2xl font-bold mt-10">1b - [PLACEHOLDER: Section title]</h2>
+        <div className="grid gap-8 md:grid-cols-3">
+          <div className="md:col-span-2">
+            <Tabs defaultValue="overview">
+              <TabsList className="grid w-full grid-cols-3">
+                <TabsTrigger value="overview">Overview</TabsTrigger>
+                <TabsTrigger value="evidence">Evidence</TabsTrigger>
+                <TabsTrigger value="reflection">Reflection</TabsTrigger>
+              </TabsList>
+              <TabsContent value="overview" className="p-4 border rounded-md mt-2">
+                <h2 className="text-xl font-semibold mb-4">Description</h2>
+                <p className="mb-4">
+                  [PLACEHOLDER: Overview content for this section.]
+                </p>
+              </TabsContent>
+              <TabsContent value="evidence" className="space-y-4 p-4 border rounded-md mt-2">
+                <div className="space-y-4">
+                  <h2 className="text-xl font-semibold">Evidence</h2>
+                  <p className="mb-4">
+                    [PLACEHOLDER: Evidence for this section.]
+                  </p>
+                </div>
+              </TabsContent>
+              <TabsContent value="reflection" className="p-4 border rounded-md mt-2">
+                <h2 className="text-xl font-semibold mb-4">Reflection</h2>
+                <p className="mb-4">
+                  [PLACEHOLDER: Reflection for this section.]
                 </p>
               </TabsContent>
             </Tabs>

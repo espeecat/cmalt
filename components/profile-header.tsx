@@ -16,7 +16,7 @@ export function ProfileHeader() {
             <p className="text-muted-foreground">Edtech Software Developer</p>
             <div className="flex flex-wrap gap-2">
               {/*<Badge variant="secondary">CMALT Certified</Badge>*/}
-              <Badge variant="secondary">Software Developmen</Badge>
+              <Badge variant="secondary">Software Development</Badge>
               <Badge variant="secondary">Educational Technology</Badge>
             </div>
           </div>
